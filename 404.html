@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>french-app</title>
+    <title>Franca Lingua</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
   <link rel="stylesheet" href="/assets/body.css">
-<link rel="preload" href="/./wasm/french-app_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-            <link rel="preload" href="/./wasm/french-app.js" as="script">
+<link rel="preload" href="/./wasm/FrancaLingua_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+            <link rel="preload" href="/./wasm/FrancaLingua.js" as="script">
             </head>
   <body>
     <div id="main"></div>
   <script>
             // We can't use a module script here because we need to start the script immediately when streaming
-            import("/./wasm/french-app.js").then(
+            import("/./wasm/FrancaLingua.js").then(
                 ({ default: init }) => {
-                init("/./wasm/french-app_bg.wasm").then((wasm) => {
+                init("/./wasm/FrancaLingua_bg.wasm").then((wasm) => {
                     if (wasm.__wbindgen_start == undefined) {
                     wasm.main();
                     }
