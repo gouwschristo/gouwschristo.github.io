@@ -1507,6 +1507,10 @@ function __wbg_get_imports() {
         const ret = arg0.versions;
         return ret;
     };
+    imports.wbg.__wbg_vibrate_a0f01dd339454862 = function(arg0) {
+        const ret = navigator.vibrate(arg0);
+        return ret;
+    };
     imports.wbg.__wbg_weak_55bb2693a2ebcdf7 = function(arg0) {
         const ret = arg0.weak();
         return ret;
